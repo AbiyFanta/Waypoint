@@ -117,8 +117,8 @@ const buttonStyle = {
   color: "#FFFFFF",
   textDecoration: "none",
   fontWeight: "bold",
-  padding: "8px 16px",
-  borderRadius: "20px",
+  padding: "10px 20px",
+  borderRadius: "15px",
   fontFamily: "Arial, sans-serif",
   transition: "background-color 0.3s ease",
 };

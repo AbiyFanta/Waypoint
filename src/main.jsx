@@ -9,6 +9,7 @@ import Contact from "./Contact";
 import FAQ from "./FAQ"; // Import the FAQ component
 import Services from "./Services";
 import SignIn from "./SignIn";
+import GetStarted from "./GetStarted";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -20,6 +21,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/contact" element={<Contact />} />
         <Route path="/faq" element={<FAQ />} />
         <Route path="/signin" element={<SignIn />} />
+        <Route path="/getstarted" element={<GetStarted />} />
       </Routes>
     </Router>
   </React.StrictMode>
