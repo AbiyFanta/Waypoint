@@ -9,8 +9,8 @@ const App = () => {
       <Navbar />
       <div style={homeStyle}>
         <h1>Home Page</h1>
-        <p>Welcome to the home page!</p>
-        <p>Scroll down to see the navbar minimize and fade out.</p>
+        <h1>Your perfect trip, expertly planned.</h1>
+        <p>Your all in one travel companion</p>
       </div>
     </div>
   );
@@ -24,3 +24,11 @@ const homeStyle = {
 };
 
 export default App;
+
+const waypointStyle = {
+  color: "#39603D", // Secondary color
+  textDecoration: "none",
+  fontWeight: "bold",
+  fontFamily: "'Libre Bodoni', serif", // Apply Libre Bodoni font
+  fontSize: "24px", // Increase font size for emphasis
+};
