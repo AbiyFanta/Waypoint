@@ -1,7 +1,7 @@
 // src/Contact.jsx
 
 import React from "react";
-import Navbar from "./NavBar";
+import Navbar from "./Navbar";
 import CForm from "./ContactForm";
 import { Form } from "react-router-dom";
 
