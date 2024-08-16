@@ -34,7 +34,7 @@ const pageStyle = {
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
-  padding: "20px",
+  padding: "50px",
   minHeight: "100vh",
   backgroundColor: "#DADED4",
   color: "#39603D",
