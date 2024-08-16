@@ -19,10 +19,11 @@ const App = () => {
 };
 
 const homeStyle = {
-  padding: "20px",
+  padding: "50px",
   textAlign: "center",
   minHeight: "200vh", // Add some height to enable scrolling
   backgroundColor: "#DADED4", // Main background color
+  fontSize: "30px", // Increase font size for emphasis
 };
 
 export default App;
