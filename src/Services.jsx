@@ -1,5 +1,3 @@
-// src/Services.jsx
-
 import React from "react";
 import Navbar from "./Navbar";
 
@@ -8,18 +6,24 @@ const Services = () => {
     <div>
       <Navbar />
       <div style={pageStyle}>
-        <h1>Our Services</h1>
-        <div style={serviceItemStyle}>
-          <h2>Service 1</h2>
-          <p>Description of service 1.</p>
-        </div>
-        <div style={serviceItemStyle}>
-          <h2>Service 2</h2>
-          <p>Description of service 2.</p>
-        </div>
-        <div style={serviceItemStyle}>
-          <h2>Service 3</h2>
-          <p>Description of service 3.</p>
+        <h1 style={headingStyle}>Our Services</h1>
+        <div style={servicesContainerStyle}>
+          <div style={serviceItemStyle}>
+            <img src="path/to/image1.jpg" alt="Service 1" style={imageStyle} />
+            <h2 style={serviceTitleStyle}>Service 1</h2>
+          </div>
+          <div style={serviceItemStyle}>
+            <img src="path/to/image2.jpg" alt="Service 2" style={imageStyle} />
+            <h2 style={serviceTitleStyle}>Service 2</h2>
+          </div>
+          <div style={serviceItemStyle}>
+            <img src="path/to/image3.jpg" alt="Service 3" style={imageStyle} />
+            <h2 style={serviceTitleStyle}>Service 3</h2>
+          </div>
+          <div style={serviceItemStyle}>
+            <img src="path/to/image4.jpg" alt="Service 4" style={imageStyle} />
+            <h2 style={serviceTitleStyle}>Service 4</h2>
+          </div>
         </div>
       </div>
     </div>
@@ -27,14 +31,42 @@ const Services = () => {
 };
 
 const pageStyle = {
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
   padding: "20px",
-  minHeight: "200vh", // Adjust if needed
+  minHeight: "100vh",
   backgroundColor: "#DADED4",
   color: "#39603D",
 };
 
+const headingStyle = {
+  marginBottom: "40px",
+  textAlign: "center",
+};
+
+const servicesContainerStyle = {
+  display: "grid",
+  gridTemplateColumns: "repeat(2, 1fr)",
+  gap: "40px",
+  justifyItems: "center",
+  width: "100%",
+  maxWidth: "1200px",
+};
+
 const serviceItemStyle = {
-  marginBottom: "20px",
+  textAlign: "center",
+};
+
+const serviceTitleStyle = {
+  marginTop: "15px",
+};
+
+const imageStyle = {
+  width: "300px",
+  height: "200px",
+  objectFit: "cover",
+  borderRadius: "10px",
 };
 
 export default Services;
